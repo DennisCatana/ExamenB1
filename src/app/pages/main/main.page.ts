@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { User } from 'src/app/models/user.model';
+import { FirebaseService } from 'src/app/services/firebase.service';
+import { UtilsService } from 'src/app/services/utils.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +11,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPage implements OnInit {
 
-  constructor() { }
+  pages = [
+    { title: 'Hoja de Vida', url: '/main/home', icon: 'document-outline' },
+    { title: 'Fotos', url: '/main/fotos', icon: 'camera-outline' },
+    { title: 'Archivos', url: '/main/archivos', icon: 'cloud-upload-outline' },
+    { title: 'Chat', url: '/main/chat', icon: 'chatbubbles-outline' },
+    { title: 'Ubicación', url: '/main/ubicacion', icon: 'location-outline' },
+  ]
+
+  router = inject(Router);
+  firebaseSvc = inject(FirebaseService);
+  utilSvc = inject(UtilsService);
+  currentPath: string = '';
 
   ngOnInit() {
+    this.router.events.subscribe((event: any) => {
+      if (event?.url) this.currentPath = event.url;
+
+    })
+  }
+
+    //=====Obtener los datos del usuario=====
+    user(): User{
+      return this.utilSvc.getFromLocalStorage('user');
+    }
+
+  //=====Cerrar sesion=====
+  signOut() {
+    this.firebaseSvc.signOut();
   }
 
 }
