@@ -1,4 +1,17 @@
-<app-header title="Hoja de vida"></app-header>
+<ion-header class="ion-no-border" title="Hoja de vida">
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button>
+            </ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            <strong>Hoja de vida</strong>
+            <div style="font-size: 13px;">D A R K</div>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
 
 <ion-content [fullscreen]="true" class="ion-padding">
     <ion-card-header style="text-align: center;">
@@ -109,14 +122,4 @@
             </ion-item>
         </ion-list>
     </ion-card>
-
-    <ion-footer class="ion-no-border safe-p-bottom">
-        <ion-menu-toggle auto-hide="false">
-            <ion-button expand="full" (click)="signOut()" fill="clear">
-                <ion-icon slot="start" name="log-out-outline"></ion-icon>
-                <ion-label>Cerrar Sesión</ion-label>
-            </ion-button>
-        </ion-menu-toggle>
-    </ion-footer>
-
 </ion-content>
