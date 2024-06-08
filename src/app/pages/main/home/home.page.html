@@ -1,5 +1,122 @@
 <app-header title="Hoja de vida"></app-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
+    <ion-card-header style="text-align: center;">
+        <ion-card-title>Dennis Joel Cataña Pilatasig</ion-card-title>
+        <ion-card-subtitle>Est. Desarrollador de Software</ion-card-subtitle><br>
+        <ion-avatar style="display: block; margin: auto;">
+            <ion-img src="../../assets/CV.jpeg"></ion-img>
+        </ion-avatar>
+        <p>Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Me destaco por el
+            buen trabajo en equipo, la rápida toma de decisiones y el buen manejo de la presión. Busco la oportunidad de
+            poner mis conocimientos aprueba.</p>
+    </ion-card-header>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title><b>Contactos</b></ion-card-title>
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <ion-icon aria-hidden="true" name="logo-whatsapp" slot="start"></ion-icon>
+                <ion-label>Telefono: 0986618968</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon aria-hidden="true" name="mail-outline" slot="start"></ion-icon>
+                <ion-label>Correo Electrónico: dennis.catana3b*gmail.com</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon aria-hidden="true" name="location-outline" slot="start"></ion-icon>
+                <ion-label>Dirección: La Ecuatoriana</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon aria-hidden="true" name="logo-linkedin" slot="start"></ion-icon>
+                <ion-label>Linkedin: Dennis Cataña</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title><b>Educación</b></ion-card-title>
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <ion-icon aria-hidden="true" name="school-outline" slot="start"></ion-icon>
+                <ion-label>Escuela Politécnica Nacional (2022- Actualidad): <br> - Est. en desarrollo de software
+                </ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-icon aria-hidden="true" name="school-outline" slot="start"></ion-icon>
+                <p>Unidad Educativa Policía Nacional “Sur” (2019-2022): <br>- Bachillerato General Unificado</p><br><br>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title><b>Herramientas</b></ion-card-title>
+        </ion-card-header>
+        <ion-list>
+            <ion-card-subtitle><b>BackEnd</b></ion-card-subtitle>
+            <ion-item>
+                <ion-label>- Postgre</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>- Node.js</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>- Prisma</ion-label>
+            </ion-item>
+        </ion-list>
+        <ion-list>
+            <ion-card-subtitle><b>FrontEnd</b></ion-card-subtitle>
+            <ion-item>
+                <ion-label>- JavaScript</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>- React</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>- Vaadin</ion-label>
+            </ion-item>
+        </ion-list>
+
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title><b>Cursos</b></ion-card-title>
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <ion-label>Centro de Educación Continua EPN || 2023 <br><br> - Fundamentos de Inteligencia
+                    Artificial</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title><b>Idiomas</b></ion-card-title>
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <ion-label>Español: Nativo</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label>Ingles: Intermedio</ion-label>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-footer class="ion-no-border safe-p-bottom">
+        <ion-menu-toggle auto-hide="false">
+            <ion-button expand="full" (click)="signOut()" fill="clear">
+                <ion-icon slot="start" name="log-out-outline"></ion-icon>
+                <ion-label>Cerrar Sesión</ion-label>
+            </ion-button>
+        </ion-menu-toggle>
+    </ion-footer>
 
 </ion-content>
