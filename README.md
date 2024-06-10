@@ -13,7 +13,7 @@
 ![alt text](fotos/env.png)
  - environment.prod.ts<br>
 ![alt text](fotos/envprod.png)
-6. Una vez realizada esta confihuraciones el usuario ejecutara el comando *ionic serve* y esperara a que en un navegadorse le muestre la siguiente pantalla. <br>
+6. Una vez realizada esta configuraciones el usuario ejecutara el comando *ionic serve* y esperara a que en un navegadorse le muestre la siguiente pantalla. <br>
 ![alt text](fotos/login.png)
 7. En este caso si no tiene un usuario registrado se procedera a crear uno y se procedera a verificar en firabse en autenticaciones se haya creado ese usuario. <br>
 ![alt text](fotos/registro.png) <br>
