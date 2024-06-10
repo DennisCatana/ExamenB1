@@ -15,10 +15,10 @@
 ![alt text](fotos/envprod.png)
 6. Una vez realizada esta configuraciones el usuario ejecutara el comando *ionic serve* y esperara a que en un navegadorse le muestre la siguiente pantalla. <br>
 ![alt text](fotos/login.png)
-7. En este caso si no tiene un usuario registrado se procedera a crear uno y se procedera a verificar en firabse en autenticaciones se haya creado ese usuario. <br>
+7. En este caso si no tiene un usuario registrado se procedera a crear uno y se procedera a verificar en firabase en autenticaciones se haya creado ese usuario. <br>
 ![alt text](fotos/registro.png) <br>
 ![alt text](fotos/auth.png)
-8. Debera de ingrear un gamil y contraseña solo como credenciales. <br>
+8. Debera de ingrear un gmail y contraseña como credenciales. <br>
 ![alt text](fotos/loginI.png)
-9. Una vez adentro podra ver la hoja de vida de Dennis Cataña mensajes. <br>
+9. Una vez adentro podra ver la hoja de vida de Dennis Cataña. <br>
 ![alt text](fotos/cv.png)
